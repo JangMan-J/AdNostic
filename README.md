@@ -62,4 +62,8 @@ Needs only Node.js (developed with Node 26; no packages to install). Output: `di
 
 ## License
 
-MIT, see `LICENSE`.
+Copyright (C) 2026 janglabs.io
+
+AdNostic is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. It is distributed WITHOUT ANY WARRANTY. See `LICENSE` for the full text.
+
+The per-site rules in `src/site-rules.json` are derived from the [uBlock Origin uAssets](https://github.com/uBlockOrigin/uAssets) and [AdGuard Filters](https://github.com/AdguardTeam/AdguardFilters) lists, both licensed under the GNU GPL v3. Credit for that research goes to their maintainers and contributors.
