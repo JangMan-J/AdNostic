@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="tools/AdNostic.svg" alt="AdNostic logo" width="160">
+</p>
+
 # AdNostic (Chrome & Firefox WebExtension)
 
 OS-agnostic Manifest V3 browser extension for **Chrome / Brave / Edge / Chromium** and **Firefox (140+)**.
