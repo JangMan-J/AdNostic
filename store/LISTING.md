@@ -38,4 +38,4 @@ _It does not remove every ad and is not a replacement for a full ad blocker._
 - `storage`: "Two local settings: the global on/off switch and the list of sites the user paused. Never leaves the device."
 
 ## Screenshot
-`store/screenshot-popup-1280x800.png`
+`store/screenshot.png`
