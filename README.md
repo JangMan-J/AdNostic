@@ -12,6 +12,11 @@ OS-agnostic Manifest V3 browser extension for **Chrome / Brave / Edge / Chromium
 
 Blocks intrusive ads, pop-unders, and adversarial scripts. Specifically targets blocking ads containing explicit content, as well as disabling embedded scripts intended to circumvent user settings and preferences. Collects no data.
 
+**Firefox Add-ons:** [addons.mozilla.org/firefox/addon/adnostic](https://addons.mozilla.org/en-US/firefox/addon/adnostic/)
+
+> [!NOTE]
+> AdNostic is awaiting final review by Mozilla. Until it is approved, the add-on page may show as unavailable. In the meantime, install from the [latest release](https://github.com/JangMan-J/AdNostic/releases/latest).
+
 ## Packaged Extension Files
 
 - **Chrome / Brave / Edge / Chromium**: `dist/adnostic-chrome.zip` (unpacked folder: `dist/chrome/`)
