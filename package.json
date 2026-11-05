@@ -1,0 +1,11 @@
+{
+  "name": "adnostic",
+  "version": "1.0.2",
+  "private": true,
+  "type": "module",
+  "description": "Blocks intrusive ads, pop-unders and adversarial scripts. Targets explicit ads and scripts that override settings. Collects no data.",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "license": "MIT"
+}

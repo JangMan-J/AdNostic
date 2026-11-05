@@ -1,0 +1,439 @@
+{
+  "version": 1,
+  "hosts": [
+    {
+      "host": "a.exdynsrv.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame"
+      ]
+    },
+    {
+      "host": "a.magsrv.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame"
+      ]
+    },
+    {
+      "host": "a.pemsrv.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame"
+      ]
+    },
+    {
+      "host": "a.realsrv.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame"
+      ]
+    },
+    {
+      "host": "adblockanalytics.com",
+      "defuse": true
+    },
+    {
+      "host": "addefend.com",
+      "block": [
+        "script",
+        "xmlhttprequest"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "admiralcdn.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "ads.exoclick.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "media",
+        "image"
+      ]
+    },
+    {
+      "host": "ads.trafficjunky.net",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "media",
+        "image"
+      ]
+    },
+    {
+      "host": "adsbyjuicy.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "media"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "adsco.re",
+      "block": [
+        "script",
+        "xmlhttprequest"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "adtng.com",
+      "defuse": true
+    },
+    {
+      "host": "antiblock.org",
+      "block": [
+        "script",
+        "xmlhttprequest"
+      ]
+    },
+    {
+      "host": "blockadblock.com",
+      "block": [
+        "script",
+        "xmlhttprequest"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "chpadblock.com",
+      "block": [
+        "script",
+        "xmlhttprequest"
+      ]
+    },
+    {
+      "host": "clickadu.com",
+      "defuse": true
+    },
+    {
+      "host": "detectadblock.com",
+      "defuse": true
+    },
+    {
+      "host": "doubleclick.net",
+      "defuse": true
+    },
+    {
+      "host": "dynsrvtbg.com",
+      "defuse": true
+    },
+    {
+      "host": "ero-advertising.com",
+      "defuse": true
+    },
+    {
+      "host": "error-report.com",
+      "block": [
+        "script",
+        "xmlhttprequest"
+      ]
+    },
+    {
+      "host": "exdynsrv.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "exoclick.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "fuckadblock.com",
+      "block": [
+        "script",
+        "xmlhttprequest"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "fundingchoicesmessages.google.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "getadmiral.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "googleadservices.com",
+      "defuse": true
+    },
+    {
+      "host": "googlesyndication.com",
+      "defuse": true
+    },
+    {
+      "host": "hilltopads.net",
+      "defuse": true
+    },
+    {
+      "host": "ht-cdn.trafficjunky.net",
+      "block": [
+        "media",
+        "xmlhttprequest",
+        "script",
+        "other"
+      ]
+    },
+    {
+      "host": "jads.co",
+      "defuse": true
+    },
+    {
+      "host": "juicyads.com",
+      "defuse": true
+    },
+    {
+      "host": "magsrv.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "pagefair.com",
+      "block": [
+        "script",
+        "xmlhttprequest"
+      ]
+    },
+    {
+      "host": "pagefair.net",
+      "block": [
+        "script",
+        "xmlhttprequest"
+      ]
+    },
+    {
+      "host": "pemsrv.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "plugrush.com",
+      "defuse": true
+    },
+    {
+      "host": "popads.net",
+      "defuse": true
+    },
+    {
+      "host": "popcash.net",
+      "defuse": true
+    },
+    {
+      "host": "realsrv.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "s.magsrv.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "media"
+      ]
+    },
+    {
+      "host": "s.pemsrv.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "media"
+      ]
+    },
+    {
+      "host": "syndication.exdynsrv.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "media",
+        "image"
+      ]
+    },
+    {
+      "host": "tcdwm.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media"
+      ]
+    },
+    {
+      "host": "trafficjunky.com",
+      "defuse": true
+    },
+    {
+      "host": "trafficjunky.net",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "tsyndicate.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "media"
+      ],
+      "defuse": true
+    },
+    {
+      "host": "vcmdiawe.com",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media"
+      ]
+    }
+  ],
+  "hostPatterns": [
+    {
+      "regex": "adservice\\.google\\.[a-z.]+",
+      "defuse": true
+    }
+  ],
+  "paths": [
+    {
+      "urlFilter": "||detectadblock.com/adblock",
+      "block": [
+        "script",
+        "xmlhttprequest"
+      ]
+    },
+    {
+      "urlFilter": "/fuckadblock.min.js",
+      "block": [
+        "script"
+      ]
+    },
+    {
+      "urlFilter": "/blockadblock.js",
+      "block": [
+        "script"
+      ]
+    },
+    {
+      "urlFilter": "/adblock-detector",
+      "block": [
+        "script"
+      ]
+    },
+    {
+      "urlFilter": "||static.trafficjunky.com/invocation/embeddedads/",
+      "block": [
+        "script",
+        "xmlhttprequest",
+        "other"
+      ]
+    },
+    {
+      "urlFilter": "/pre_videos/",
+      "block": [
+        "media",
+        "xmlhttprequest"
+      ]
+    },
+    {
+      "urlFilter": "psid=ed_tj",
+      "block": [
+        "media",
+        "xmlhttprequest"
+      ]
+    },
+    {
+      "urlFilter": "/bundlePlayerAds/",
+      "block": [
+        "script"
+      ]
+    },
+    {
+      "urlFilter": "/movie/preroll/",
+      "block": [
+        "media",
+        "xmlhttprequest"
+      ]
+    },
+    {
+      "urlFilter": "/preroll/",
+      "block": [
+        "media"
+      ]
+    }
+  ],
+  "probePathRe": "\\/(?:ads|adframe|adscript|advertisement|adblock|adblock-detector|adsense|google-adsense|adbanner|fuckadblock|blockadblock|ad-provider|adsbygoogle|jads|show_ads|pagead|site_ads|eroclick)(?:\\.min)?\\.(?:js|gif|png|html|php)(?:[?#]|$)|\\/pagead\\/js\\/adsbygoogle\\.js|\\/delivery\\/js\\/abp\\/|\\/exoclick\\.ads|\\/ads\\/?(?:[?#]|$)",
+  "manifests": {
+    "vmap": "(?:\\/vmap(?:\\.xml|\\/|\\?|$)|[?&](?:output|type)=vmap\\b)",
+    "vast": "(?:\\/vast(?:\\.xml|\\.php|\\/|\\?|$)|[?&](?:output|type)=(?:xml_)?vast\\d*\\b|\\/xhr\\/vast\\/|\\/api\\/v\\d+\\/vast\\b|\\/do\\d*\\/[0-9a-f]{16,}\\/vast\\b|\\/preroll(?:s|_vast)?(?:\\.xml|\\/|\\?|$)|\\/gampad\\/ads\\?(?:[^#]*&)?(?:output=vast|env=vp)\\b)",
+    "jsonAd": "(?:\\/_xa\\/ads(?:_batch)?(?:\\/|\\?|$)|[?&]preroll_type=json\\b|\\/dot\\/dot\\.php\\?[^#]*adZones)"
+  },
+  "adultNetworkRe": "exoclick|exdynsrv|magsrv|pemsrv|realsrv|dynsrvtbg|trafficjunky|juicyads|adsbyjuicy|jads\\.co|popads|popcash|tsyndicate|adtng|clickadu|hilltopads|plugrush|ero-advertising|adsco\\.re"
+}

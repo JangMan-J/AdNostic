@@ -1,0 +1,75 @@
+{
+  "manifest_version": 3,
+  "name": "AdNostic",
+  "version": "1.0.2",
+  "description": "Blocks intrusive ads, pop-unders and adversarial scripts. Targets explicit ads and scripts that override settings. Collects no data.",
+  "permissions": [
+    "declarativeNetRequestWithHostAccess",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "AdNostic",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_anti_adblock",
+        "enabled": true,
+        "path": "rules/anti-adblock-dnr.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "inject-main.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "MAIN",
+      "exclude_matches": [
+        "*://*.google.com/*",
+        "*://*.youtube.com/*",
+        "*://*.mozilla.org/*",
+        "*://*.mozilla.com/*",
+        "*://*.firefox.com/*"
+      ]
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content-isolated.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "exclude_matches": [
+        "*://*.google.com/*",
+        "*://*.youtube.com/*",
+        "*://*.mozilla.org/*",
+        "*://*.mozilla.com/*",
+        "*://*.firefox.com/*"
+      ]
+    }
+  ]
+}

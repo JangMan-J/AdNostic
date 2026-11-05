@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdNostic</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <span class="dot" id="statusDot"></span>
+      <div>
+        <h1>AdNostic</h1>
+        <p class="host" id="currentHost">Active tab</p>
+      </div>
+    </div>
+    <label class="switch" title="Global protection">
+      <input type="checkbox" id="globalToggle" checked />
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <section class="hero">
+    <div class="total-count" id="totalCount">0</div>
+    <div class="total-label">anti-adblock checks neutralized</div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <span class="val" id="baitCount">0</span>
+      <span class="lbl">Bait DOM Spoofs</span>
+    </div>
+    <div class="card">
+      <span class="val" id="probeCount">0</span>
+      <span class="lbl">Probe Intercepts</span>
+    </div>
+    <div class="card">
+      <span class="val" id="sdkCount">0</span>
+      <span class="lbl">SDK Traps Defused</span>
+    </div>
+    <div class="card">
+      <span class="val" id="overlayCount">0</span>
+      <span class="lbl">Walls Removed</span>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <button id="hostToggleBtn" class="btn">Pause on this site</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

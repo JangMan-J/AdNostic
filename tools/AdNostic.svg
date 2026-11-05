@@ -1,0 +1,336 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-medallion" cx="45%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#181a24"/>
+      <stop offset="50%" stop-color="#0e1017"/>
+      <stop offset="100%" stop-color="#050608"/>
+    </radialGradient>
+
+    <!-- Bezel Metallic Gradients -->
+    <linearGradient id="bezel-metal" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#5a637d"/>
+      <stop offset="20%" stop-color="#242733"/>
+      <stop offset="50%" stop-color="#7985a6"/>
+      <stop offset="70%" stop-color="#1c1e28"/>
+      <stop offset="100%" stop-color="#3d4457"/>
+    </linearGradient>
+
+    <!-- Gold Accent on Medallion and Shield ONLY -->
+    <linearGradient id="gold-leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff4d4"/>
+      <stop offset="25%" stop-color="#e5c158"/>
+      <stop offset="60%" stop-color="#9d7822"/>
+      <stop offset="85%" stop-color="#f5dc8c"/>
+      <stop offset="100%" stop-color="#7a590f"/>
+    </linearGradient>
+
+    <!-- Shield Face Gradients: Radiant Ruby & Velvet Crimson -->
+    <radialGradient id="shield-ruby-face" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#ff3b56"/>
+      <stop offset="35%" stop-color="#e10b2c"/>
+      <stop offset="70%" stop-color="#9e0018"/>
+      <stop offset="100%" stop-color="#52000a"/>
+    </radialGradient>
+
+    <linearGradient id="shield-bevel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#e2e8f0" stop-opacity="0.75"/>
+      <stop offset="70%" stop-color="#64748b" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Glyph Gradients -->
+    <linearGradient id="glyph-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="65%" stop-color="#edf2f7"/>
+      <stop offset="100%" stop-color="#c8d3e0"/>
+    </linearGradient>
+
+    <!-- ================= AUTHENTIC FABRIC TEXTURE ================= -->
+    <!-- Fine woven herringbone/twill cloth texture -->
+    <pattern id="fabric-weave" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M 0,4 L 4,0 L 8,4 L 4,8 Z" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.06"/>
+      <path d="M 0,0 L 8,8 M 0,8 L 8,0" stroke="#000000" stroke-width="0.5" opacity="0.12"/>
+    </pattern>
+
+    <!-- Cloak Base Gradient: Rich Midnight Charcoal Velvet/Silk -->
+    <linearGradient id="cloak-grad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#242838"/>
+      <stop offset="25%" stop-color="#181a26"/>
+      <stop offset="60%" stop-color="#10121a"/>
+      <stop offset="100%" stop-color="#06070a"/>
+    </linearGradient>
+
+    <!-- Natural Soft Continuous Fold Highlights -->
+    <linearGradient id="fold-grad-A" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#0e1017"/>
+      <stop offset="35%" stop-color="#2c344a"/>
+      <stop offset="55%" stop-color="#55648c"/>
+      <stop offset="75%" stop-color="#202636"/>
+      <stop offset="100%" stop-color="#0b0d12"/>
+    </linearGradient>
+
+    <linearGradient id="fold-grad-B" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#12141c"/>
+      <stop offset="40%" stop-color="#323c54"/>
+      <stop offset="60%" stop-color="#5a6a91"/>
+      <stop offset="80%" stop-color="#22283b"/>
+      <stop offset="100%" stop-color="#08090d"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="shadow-shield-deep" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+
+    <filter id="shadow-cloak-cast" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="-4" dy="5" stdDeviation="6" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+
+    <clipPath id="shield-clip">
+      <path d="M 256.00,105.60 
+               C 199.60,143.20 180.80,143.20 124.40,143.20 
+               C 124.40,331.20 124.40,331.20 256.00,406.40 
+               C 387.60,331.20 387.60,331.20 387.60,143.20 
+               C 331.20,143.20 312.40,143.20 256.00,105.60 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- ================= CIRCULAR MEDALLION ================= -->
+  <!-- Outer Bezel Cast Shadow -->
+  <circle cx="256" cy="256" r="238" fill="none" stroke="#000000" stroke-width="12" opacity="0.65" filter="url(#soft-glow)"/>
+
+  <!-- Base Medallion Disc -->
+  <circle cx="256" cy="256" r="236" fill="url(#bg-medallion)"/>
+
+  <!-- Subtle Radial Aura Behind Shield -->
+  <radialGradient id="shield-aura" cx="48%" cy="40%" r="50%">
+    <stop offset="0%" stop-color="#ff1a38" stop-opacity="0.18"/>
+    <stop offset="50%" stop-color="#800014" stop-opacity="0.06"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+  </radialGradient>
+  <circle cx="256" cy="245" r="195" fill="url(#shield-aura)"/>
+
+  <!-- Concentric Bezel Frames (100% unconcealed and clear all around!) -->
+  <circle cx="256" cy="256" r="234" fill="none" stroke="url(#bezel-metal)" stroke-width="6"/>
+  <circle cx="256" cy="256" r="229" fill="none" stroke="url(#gold-leaf)" stroke-width="1.8" opacity="0.9"/>
+  <circle cx="256" cy="256" r="226" fill="none" stroke="#000000" stroke-width="2.5" opacity="0.75"/>
+  <circle cx="256" cy="256" r="224" fill="none" stroke="#252937" stroke-width="1" opacity="0.4"/>
+
+  <!-- ================= CLOAK BACK (BEHIND THE SHIELD) ================= -->
+  <!-- Loops over top rim like a towel/cloak over a curtain rod: back flap hangs behind shield -->
+  <g>
+    <path d="M 248,106 
+             C 275,76 340,82 396,122 
+             L 404,155 
+             C 388,175 350,180 310,172
+             C 275,162 255,135 248,106 Z"
+          fill="#0c0e14"/>
+    <path d="M 248,106 C 275,76 340,82 396,122 L 392,132 C 340,92 275,88 248,106 Z" 
+          fill="#000000" opacity="0.6"/>
+  </g>
+
+  <!-- ================= HEATER SHIELD (uBlock Origin Icon Geometry) ================= -->
+  <g filter="url(#shadow-shield-deep)">
+    <!-- Base Shield Silhouette (Under everything) -->
+    <path d="M 256.00,105.60 
+             C 199.60,143.20 180.80,143.20 124.40,143.20 
+             C 124.40,331.20 124.40,331.20 256.00,406.40 
+             C 387.60,331.20 387.60,331.20 387.60,143.20 
+             C 331.20,143.20 312.40,143.20 256.00,105.60 Z"
+          fill="#480009"/>
+
+    <!-- Left Shield Face (Radiant Ruby Red, Fully Exposed) -->
+    <path d="M 256.00,105.60 
+             C 199.60,143.20 180.80,143.20 124.40,143.20 
+             C 124.40,331.20 124.40,331.20 256.00,406.40 
+             L 256.00,105.60 Z"
+          fill="url(#shield-ruby-face)"/>
+
+    <!-- EXPOSED LEFT GOLDEN BRIM & BEVEL -->
+    <!-- Drawn ONLY on the exposed left half of the shield! -->
+    <!-- Stops cleanly at top crest (256, 105.6). Zero gold on right half! -->
+    <path d="M 256.00,101.50 
+             C 197.00,140.50 177.50,140.50 120.50,140.50 
+             C 120.50,334.50 120.50,334.50 256.00,411.50 
+             L 256.00,406.40 
+             C 124.40,331.20 124.40,331.20 124.40,143.20 
+             C 180.80,143.20 199.60,143.20 256.00,105.60 Z"
+          fill="#100103" stroke="url(#gold-leaf)" stroke-width="2"/>
+
+    <!-- Inner Metallic Left Bevel -->
+    <path d="M 256.00,104.00 
+             C 198.50,142.00 179.50,142.00 123.00,142.00 
+             C 123.00,332.50 123.00,332.50 256.00,408.50"
+          fill="none" stroke="url(#shield-bevel)" stroke-width="3" opacity="0.85"/>
+
+    <!-- Central Heraldic Ridge Highlight (Specular spine on exposed crest) -->
+    <line x1="256" y1="106" x2="256" y2="405" stroke="#ffffff" stroke-width="1.8" opacity="0.55"/>
+
+    
+
+    
+
+    <!-- ================= THE "u" GLYPH (100% Exposed & Gleaming) ================= -->
+    <g>
+      <!-- 'u' Drop shadow -->
+      <path d="M 180.80,201.60 L 199.60,201.60 L 199.60,258.00 
+               C 199.60,268.34 208.06,276.80 218.40,276.80 
+               C 228.74,276.80 237.20,268.34 237.20,258.00 
+               L 237.20,201.60 L 256.00,201.60 L 256.00,258.00 
+               C 256.00,278.68 239.08,295.60 218.40,295.60 
+               C 197.72,295.60 180.80,278.68 180.80,258.00 Z"
+            fill="#300006" opacity="0.7"/>
+
+      <!-- 'u' Body -->
+      <path d="M 180.80,199.60 L 199.60,199.60 L 199.60,256.00 
+               C 199.60,266.34 208.06,274.80 218.40,274.80 
+               C 228.74,274.80 237.20,266.34 237.20,256.00 
+               L 237.20,199.60 L 256.00,199.60 L 256.00,256.00 
+               C 256.00,276.68 239.08,293.60 218.40,293.60 
+               C 197.72,293.60 180.80,276.68 180.80,256.00 Z"
+            fill="url(#glyph-grad)" stroke="#ffffff" stroke-width="1.2"/>
+
+      <!-- 'u' Top Bevel Highlights -->
+      <line x1="181" y1="200" x2="200" y2="200" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <line x1="237" y1="200" x2="256" y2="200" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 200,256 C 200,266 208,274 218.4,274 C 228.8,274 237,266 237,256" 
+            fill="none" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
+    </g>
+    <!-- Solid, opaque fabric covers right half — NO lettering drawn underneath! -->
+  </g>
+
+  <!-- ================= CAST SHADOW OF CLOAK ONTO SHIELD ================= -->
+  <g clip-path="url(#shield-clip)">
+    <path d="M 242,94 
+             C 275,100 330,110 398,135
+             L 398,175 
+             C 330,145 280,135 250,135
+             C 240,175 238,220 244,265
+             C 248,300 236,335 228,370
+             C 218,395 230,415 248,425
+             L 395,425 L 395,135 Z"
+          fill="#000000" opacity="0.85" filter="url(#shadow-cloak-cast)"/>
+  </g>
+
+  <!-- ================= THE DRAPED CLOAK / FABRIC ================= -->
+  <!-- Bottom-right tip is lifted up to leave the medallion border generously unconcealed! -->
+  <g filter="url(#shadow-cloak-cast)">
+
+    <!-- 1. SOLID CONTINUOUS CLOAK BODY -->
+    <!-- Lifted bottom-right tip: max radius r ≈ 171px from center (256, 256), leaving over 50px buffer to border! -->
+    <path d="M 244,95 
+             C 278,76 342,82 398,122
+             C 416,155 418,205 412,255
+             C 406,300 395,342 376,378
+             C 356,404 322,418 282,418
+             C 245,418 224,406 214,385
+             C 208,355 216,325 226,295
+             C 236,260 238,232 240,202
+             C 242,168 238,130 244,95 Z"
+          fill="url(#cloak-grad)"/>
+
+    <!-- Woven fabric texture overlay across the entire cloth -->
+    <path d="M 244,95 
+             C 278,76 342,82 398,122
+             C 416,155 418,205 412,255
+             C 406,300 395,342 376,378
+             C 356,404 322,418 282,418
+             C 245,418 224,406 214,385
+             C 208,355 216,325 226,295
+             C 236,260 238,232 240,202
+             C 242,168 238,130 244,95 Z"
+          fill="url(#fabric-weave)"/>
+
+    <!-- 2. TOP FOLD ROLL (Towel/Cloak looping over the top edge of the shield) -->
+    <!-- Same material family, subtle 3D cylindrical shading showing the cloth bend -->
+    <path d="M 244,95 
+             C 278,76 342,82 398,122
+             C 402,128 398,136 390,134
+             C 340,98 276,92 244,104 Z"
+          fill="#2a3042" opacity="0.6"/>
+    <!-- Subtle diffuse highlight on the cloth bend -->
+    <path d="M 248,90 C 278,78 344,84 394,124" 
+          fill="none" stroke="#5a688f" stroke-width="1.8" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- 3. NATURAL FLOWING GARMENT FOLDS -->
+    <!-- Fold 1 (Leading center swathe) -->
+    <path d="M 244,104 
+             C 255,145 250,190 252,235 
+             C 254,275 260,312 258,350
+             C 256,382 248,405 242,416
+             C 254,416 268,392 272,358
+             C 274,322 270,285 270,245
+             C 270,202 268,160 260,120
+             C 256,108 248,104 244,104 Z"
+          fill="url(#fold-grad-A)" opacity="0.85"/>
+    <path d="M 248,118 C 256,165 253,212 255,260 C 257,305 262,345 260,385 C 258,402 250,412 246,416"
+          fill="none" stroke="#6879a3" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+
+    <!-- Fold 2 (Mid-body diagonal drape) -->
+    <path d="M 292,106 
+             C 314,146 317,192 318,238 
+             C 320,282 320,326 316,365
+             C 312,395 302,414 294,418
+             C 308,416 320,398 325,365
+             C 329,328 329,286 329,245
+             C 329,204 324,160 315,122
+             C 310,110 300,106 292,106 Z"
+          fill="url(#fold-grad-B)" opacity="0.8"/>
+    <path d="M 300,118 C 315,162 317,208 318,252 C 320,296 320,338 316,375 C 312,398 304,410 298,418"
+          fill="none" stroke="#5a6a91" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Fold 3 (Shoulder & flank cascade - Lifted safely) -->
+    <path d="M 345,116 
+             C 368,150 376,195 380,242 
+             C 384,286 380,332 370,368
+             C 362,388 350,402 340,410
+             C 352,404 364,386 370,358
+             C 376,322 378,280 376,240
+             C 374,196 368,155 354,122
+             C 350,115 346,116 345,116 Z"
+          fill="url(#fold-grad-A)" opacity="0.75"/>
+    <path d="M 354,125 C 374,168 380,215 382,262 C 384,308 380,350 372,382 C 366,396 358,405 352,408"
+          fill="none" stroke="#506085" stroke-width="1.8" stroke-linecap="round" opacity="0.45"/>
+
+    <!-- 4. LOOSE DRAPERY ACROSS THE BOTTOM (Lifted bottom-right hem) -->
+    <!-- The fabric hangs loosely across the bottom with a soft, wavy hem floating generously above the border -->
+    <path d="M 214,385 
+             C 232,410 268,418 306,412
+             C 338,406 364,390 376,378
+             C 356,404 322,418 282,418
+             C 245,418 224,406 214,385 Z"
+          fill="url(#fold-grad-B)" opacity="0.85"/>
+
+    <!-- Soft highlight along the loose sagging hem of the cloth -->
+    <path d="M 216,390 C 238,414 274,420 320,412 C 348,405 368,390 376,378"
+          fill="none" stroke="#5a6b94" stroke-width="2.2" stroke-linecap="round" opacity="0.55"/>
+
+    <!-- Stitched Tailored Edge (Generously floating inside the medallion field) -->
+    <path d="M 244,104 
+             C 248,135 242,175 242,215 
+             C 242,240 246,275 248,285
+             C 246,305 240,325 234,345
+             C 228,365 220,380 216,395
+             C 214,405 222,414 248,418
+             C 280,420 320,415 350,398
+             C 368,382 382,355 388,325"
+          fill="none" stroke="#485575" stroke-width="1.2" stroke-dasharray="2,3" stroke-linecap="round" opacity="0.55"/>
+  </g>
+
+  <!-- ================= FINAL POLISH & COHESIVE LIGHTING ================= -->
+  <!-- Glass/Crystal Crescent Highlight on Upper Left of Medallion -->
+  <path d="M 64,160 
+           A 234 234 0 0 1 360,60 
+           A 220 220 0 0 0 64,160 Z" 
+        fill="#ffffff" opacity="0.05"/>
+
+  <!-- High-end Circular Perimeter Rim (Lens Ring) -->
+  <circle cx="256" cy="256" r="236" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.25"/>
+  <circle cx="256" cy="256" r="237" fill="none" stroke="#000000" stroke-width="1" opacity="0.8"/>
+</svg>
